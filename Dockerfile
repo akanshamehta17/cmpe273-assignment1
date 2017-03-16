@@ -3,5 +3,5 @@ MAINTAINER "akanshamehta17@gmail.com"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python"]
-CMD ["app.py","https://github.com/sithu/assignment1-config-example"]
+ENTRYPOINT ["python","app.py"]
+CMD ["https://github.com/sithu/assignment1-config-example"]
