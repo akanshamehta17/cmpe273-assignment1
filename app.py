@@ -36,7 +36,7 @@ def show_file_contents(filename):
          return file.decoded_content 
       elif(filename.endswith(".json")):
          file = repo.get_file_contents(filename)
-         return file.decoded_content
+         return "{"+file.decoded_content+"}"
 
   except:
     return "Error: File not found" 
